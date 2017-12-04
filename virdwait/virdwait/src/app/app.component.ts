@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  goto(id){
+    jQuery('html, body').stop().animate({
+        scrollTop: jQuery('#'+id).offset().top
+    }, 1000);
+  }
 }

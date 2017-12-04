@@ -1,23 +1,76 @@
-.navbar {
-    .icon-bar {
-        background-color: #000;
+.full-screen {
+    background: url('../assets/images/bg.jpg');
+    background-size: cover;
+    height: 100%;
+    .navbar {
+        a {
+            &:hover {
+                background-color: #ccc;
+                color: #000 !important;
+            }
+            cursor:pointer;
+            color: #fff !important;
+        }
+        .active a {
+            &:hover {
+                background: #ccc !important;
+            }
+            background: transparent;
+        }
+        .navbar-brand {
+            &>img {
+                height: 100%;
+                padding: 15px;
+                width: auto;
+                padding: 7px 15px;
+            }
+            padding: 0px;
+        }
+        border: 0px;
+        background-color: transparent !important;
+        font-family: 'paralinesregular';
+        font-size:18px;
+    }
+    .footer {
+        z-index: 100;
+        bottom: 0px;
+        height: 40px;
+        // background-color: #000;
+        // background: linear-gradient(125deg, rgba(255, 118, 5, 1) 0%, rgba(39, 31, 128, 1) 91%, rgba(39, 31, 128, 1) 100%);
+        background: linear-gradient(125deg, rgba(235, 85, 19, 1) 0%, rgba(108, 38, 224, 1) 100%);
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        left: 0px;
+        padding-top: 10px;
+        font-family: 'Consolas';
+        width: 100%;
     }
 }
 
-.logo {
-    position: relative;
-    top: -20px;
-    margin-bottom: 10px;
+.home {
+    height: 100% !important;
+    padding: 5% 0;
 }
 
-.footer {
-    position: fixed;
-    z-index: 100;
-    bottom: 0px;
-    height: 40px;
-    background-color: #000;
-    color: #fff;
+.products,
+.services,
+.about,
+.contact {
+    margin-bottom: 60px;
     text-align: center;
-    left: 0px;
-    width: 100%;
+    height: auto;
+}
+
+.contact {
+    background: url("../assets/images/contact-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+@media screen and (max-width:767px) {
+    ul.nav {
+        position: absolute;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
 }

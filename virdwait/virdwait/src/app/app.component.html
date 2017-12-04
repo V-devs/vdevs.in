@@ -1,5 +1,6 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
     <div class="navbar-container container">
+        <div class="navbar-brand"><img class="img img-responsive" src="../assets/images/logo.png" /></div>
         <div class="navbar-header">
             <button type="button" data-toggle="collapse" class="navbar-toggle collapsed" data-target="#nav-item" area-expanded="false">
                         <span class="icon-bar"></span>
@@ -9,26 +10,66 @@
         </div>
         <div class="collapse navbar-collapse" id="nav-item">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a routerLink="home"><i class="fa fa-2x fa-home"></i>&ensp; Home</a></li>
-                <li><a routerLink="portfolio"><i class="fa fa-picture-o fa-2x"></i>&ensp; Portfolio</a></li>
-                <li><a routerLink="contact"><i class="fa fa-envelope-o fa-2x"></i>&ensp; Contact Us</a></li>
-                <li><a routerLink="about"><i class="fa fa-info-circle fa-2x"></i>&ensp; About Us</a></li>
+                <li class="active"><a routerLink="home">Home</a></li>
+                <li><a routerLink="products">Products</a></li>
+                <li><a routerLink="services">Services</a></li>
+                <li><a routerLink="about">About Us</a></li>
+                <li><a routerLink="contact">Contact Us</a></li>
             </ul>
         </div>
     </div>
-</nav>
-<div class="row logo">
-    <div class="col-md-3 col-lg-4 col-sm-3 col-xs-6 col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-xs-offset-1"><img class="img img-responsive" src="../assets/images/logo.png" /></div>
-</div>
-<router-outlet></router-outlet>
-
-<nav class="footer">
-    &#169; 2016-2017 Virdwait
-</nav>
-
-<div id="info-bar" style="position:fixed; top:0px; left:0px; height:30px; text-align:center; font-size:21px; width:100%; background-color:#fa0; color:#fff;">
-    An updation is pending on this website. You're seeing a placeholder site.
-    <div title="Dismiss this alert" style="float:right; margin-right:20px; cursor:pointer;" onClick="$('#info-bar').slideUp(500);">X
-
+</nav> -->
+<div class="full-screen">
+    <div class="container navbar-top">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                    <a class="navbar-brand" href="home">
+                        <img class="img img-responsive" src="../assets/images/logo.png" />
+                    </a>
+                </div>
+                <div id="navbar2" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a (click)="goto('home')">Home</a></li>
+                        <li><a (click)="goto('products')">Products</a></li>
+                        <li><a (click)="goto('services')">Services</a></li>
+                        <li><a (click)="goto('about')">About Us</a></li>
+                        <li><a (click)="goto('contact')">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
     </div>
+    <div id="home" class="container home">
+        <app-home></app-home>
+    </div>
+    <div id="products" class="container products">
+        <app-products></app-products>
+    </div>
+    <div id="services" class="container services">
+        <app-services></app-services>
+    </div>
+    <div id="about" class="container about">
+        <app-about></app-about>
+    </div>
+    <div id="contact" class="container contact">
+        <app-contact></app-contact>
+    </div>
+    <div class="footer">
+        &#169; 2016-2017 V Devs
+    </div>
+    <!-- <div id="info-bar" style="position:fixed; top:0px; left:0px; height:30px; text-align:center; font-size:21px; width:100%; background-color:#fa0; color:#fff;">
+        An updation is pending on this website. You're seeing a placeholder site.
+        <div title="Dismiss this alert" style="float:right; margin-right:20px; cursor:pointer;" onClick="$('#info-bar').slideUp(500);">X
+
+        </div>
+    </div> -->
 </div>

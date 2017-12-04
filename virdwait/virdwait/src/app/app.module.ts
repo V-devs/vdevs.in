@@ -6,20 +6,24 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../environments/firebase.config';
+import { ServicesComponent } from './components/services/services.component';
+import { ProductsComponent } from './components/products/products.component';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    PortfolioComponent
+    ServicesComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path : '',
@@ -37,10 +41,6 @@ import { firebaseConfig } from '../environments/firebase.config';
       {
         path : 'contact',
         component : ContactComponent
-      },
-      {
-        path : 'portfolio',
-        component : PortfolioComponent
       }
     ]),
     AngularFireModule.initializeApp(firebaseConfig)

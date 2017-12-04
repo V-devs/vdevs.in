@@ -1,105 +1,68 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-lg-4 col-sm-4">
-            <div class="row">
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3"><b>Email</b>
-                </div>
-                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-1">:
-                </div>
-                <div class="col-md-8 col-lg-8 col-sm-8 col-xs-6">virdwait@gmail.com
-                </div>
-            </div>
-            <div class="row-seperator"></div>
-            <div class="row">
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3"><b>Mobile</b>
-                </div>
-                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-1">:
-                </div>
-                <div class="col-md-8 col-lg-8 col-sm-8 col-xs-6">+91-(9946)-706406
-                </div>
-            </div>
-            <div class="row-seperator"></div>
-            <div class="row">
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                </div>
-                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-1">:
-                </div>
-                <div class="col-md-8 col-lg-8 col-sm-8 col-xs-6">+91-(9074)-187178
-                </div>
-            </div>
+<div class="section-title container">CONTACT US</div>
+<div class="row">
+    <div class="col-sm-5 col-md-5 col-lg-5 address">V Devs<br />CHIRAKKAL, TANUR<br />MALAPPURAM, KERALA- 676302<br />
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xs-3">Mobile</div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1">:</div>
+            <div class="col-sm-7 col-md-7 col-lg-7 col-xs-7">+91-994-6706-406</div>
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xs-3"></div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1">:</div>
+            <div class="col-sm-7 col-md-7 col-lg-7 col-xs-7">+91-907-4187-178</div>
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xs-3">Email</div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1">:</div>
+            <div class="col-sm-7 col-md-7 col-lg-7 col-xs-7">sagarvd@vdevs.in</div>
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xs-3"></div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xs-1">:</div>
+            <div class="col-sm-7 col-md-7 col-lg-7 col-xs-7">vdevs.in@gmail.com</div>
         </div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScs3bySOS08m2avWQb0rOf19zf_v9FupC2glMuJa83HauT-sQ/viewform?embedded=true" class="col-md-7 col-sm-7 col-lg-7 col-xs-12 sep" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        <!-- <div class="col-md-7 col-sm-7 col-lg-7 sep">
-            <div class="dropdown form-group">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Choose the purpose
-                    <span class="caret"></span>
-                </button> : {{type}}
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li (click)="setType('pending');">Enquiry on pending project</li>
-                    <li (click)="setType('support');">Support on completed project</li>
-                    <li (click)="setType('new');">Want to get project done</li>
-                </ul>
-            </div>
-            <form *ngIf="type==='pending'">
-                <div class="input-group form-group">
-                    <span class="input-group-addon" id="basic-addon1">Project #</span>
-                    <input type="text" [(ngModel)]="id" name="id" class="form-control" placeholder="Enter your project id" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group form-group">
-                    <span class="input-group-addon" id="basic-addon1">Email</span>
-                    <input type="text" [(ngModel)]="email" name="email" class="form-control" placeholder="Enter your email" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group form-group">
-                    <span class="input-group-addon" id="basic-addon1">Question</span>
-                    <textarea rows="5" [(ngModel)]="message" name="message" class="form-control" placeholder="Type your question" aria-describedby="basic-addon1"></textarea>
-                </div>
-                <div class="form-group">
-                    <button (click)="contact();" class="btn btn-primary form-control">Send</button>
-                </div>
-            </form>
-            <form *ngIf="type==='support'">
-                <div class="input-group form-group">
-                    <span class="input-group-addon" id="basic-addon1">Project #</span>
-                    <input type="text" [(ngModel)]="id" name="id" class="form-control" placeholder="Enter the project id" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group form-group">
-                    <span class="input-group-addon" id="basic-addon1">Client #</span>
-                    <input type="text" [(ngModel)]="clientId" name="client-id" class="form-control" placeholder="Enter your client id" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group form-group">
-                    <span class="input-group-addon" id="basic-addon1">Question</span>
-                    <textarea rows="5" [(ngModel)]="message" name="message" class="form-control" placeholder="Type your question" aria-describedby="basic-addon1"></textarea>
-                </div>
-                <div class="form-group">
-                    <button (click)="contact();" class="btn btn-primary form-control">Send</button>
-                </div>
-            </form>
-            <form *ngIf="type==='new'">
-                <div class="input-group form-group">
-                    <span class="input-group-addon" id="basic-addon1">Name</span>
-                    <input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="Enter your name" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group form-group">
-                    <span class="input-group-addon" id="basic-addon1">Email</span>
-                    <input type="text" [(ngModel)]="email" name="email" class="form-control" placeholder="Enter your email" aria-describedby="basic-addon1">
-                </div>
-                <div class="dropdown form-group">
-                    <button class="btn btn-default dropdown-toggle form-group" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Choose the purpose
-                    <span class="caret"></span>
-                </button>&ensp; : {{newPurpose}}
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li (click)="setPurpose('project');">New Project/ Service</li>
-                        <li (click)="setPurpose('other');">Other</li>
-                    </ul>
-                </div>
-                <div class="input-group form-group">
-                    <span class="input-group-addon" id="basic-addon1">Question</span>
-                    <textarea rows="5" [(ngModel)]="message" name="message" class="form-control" placeholder="Type your question" aria-describedby="basic-addon1"></textarea>
-                </div>
-                <div class="form-group">
-                    <button (click)="contact();" class="btn btn-primary form-control">Send</button>
-                </div>
-            </form>
-        </div> -->
     </div>
+    <div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+        <form class="contact-form">
+            <div [class.invalid]="!validName" class="form-group">
+                <div class="input-group" title="Enter Your Name">
+                    <div class="input-group-addon" id="name-addon"><i class=" glyphicon glyphicon-user"></i></div>
+                    <input [(ngModel)]="name" name="name" class="form-control" aria-describedby="name-addon" id="name" placeholder="Enter your Name" />
+                </div>
+            </div>
+            <div [class.invalid]="!validEmail" class="form-group">
+                <div class="input-group" title="Enter Email Address">
+                    <div class="input-group-addon" id="email-addon"><i class=" glyphicon glyphicon-envelope"></i></div>
+                    <input [(ngModel)]="email" name="email" class="form-control" aria-describedby="email-addon" id="email" placeholder="Enter your Email" />
+                </div>
+            </div>
+            <div [class.invalid]="!validMobile" class="form-group">
+                <div class="input-group" title="Enter Mobile Number">
+                    <div class="input-group-addon" id="mobile-addon"><i class=" glyphicon glyphicon-earphone"></i></div>
+                    <input [(ngModel)]="mobile" name="mobile" class="form-control" aria-describedby="mobile-addon" id="mobile" placeholder="Enter your Mobile" />
+                </div>
+            </div>
+            <div [class.invalid]="!validPurpose" class="form-group">
+                <div class="input-group" title="Choose the purpose of Contact">
+                    <div class="input-group-addon" id="purpose-addon"><i class=" glyphicon glyphicon-check"></i></div>
+                    <select [(ngModel)]="purpose" name="purpose" class="form-control" aria-describedby="purpose-addon" id="purpose">
+                        <option value="-1" selected>Choose the purpose of Contact</option>
+                        <option value="0">Need a Service</option>
+                        <option value="1">Need a Product</option>
+                        <option value="2">Need more info on a service</option>
+                        <option value="3">Need more info on a product</option>
+                        <option value="4">Support on Existing Product/ Service</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <button (click)="submitForm();" class="form-control" id="submit">Send Message <i class="glyphicon glyphicon-send"></i></button>
+            </div>
+        </form>
+        <div class="row contact-success">
+            <div class="circle-loader">
+                <div class="checkmark draw"></div>
+            </div>
+            <h2 class="success">Successful</h2>
+        </div>
+    </div>
+</div>
+<div class="social-media">
+    <a class="facebook" href="https://www.facebook.com/VDevsIndia" target="_blank"><img class="social-logo facebook-icon" src="../../../assets/images/fb.png" /></a>&ensp;
+    <a class="facebook" href="https://www.twitter.com/vdevsindia" target="_blank"><img class="social-logo twitter-icon" src="../../../assets/images/tw.png" /></a>&ensp;
+    <a class="facebook" href="https://www.linkedin.com/company/vdevs/" target="_blank"><img class="social-logo in-icon" src="../../../assets/images/in.png" /></a>
 </div>
