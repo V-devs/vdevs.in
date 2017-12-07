@@ -1,0 +1,24 @@
+{
+  "name": "vbillserver",
+  "version": "1.0.0",
+  "description": "Server handler of Web Application V Bills Online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagarvd01/VBillsServer.git"
+  },
+  "keywords": [
+    "V",
+    "Bills",
+    "Server"
+  ],
+  "author": "Sagar V",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sagarvd01/VBillsServer/issues"
+  },
+  "homepage": "https://github.com/sagarvd01/VBillsServer#readme"
+}
